@@ -15,7 +15,7 @@ The script requires the following permissions API:
 require 'pp'
 require 'yolodice_client'
 
-YD_API_KEY = 'paste_your_api_key_here'
+YD_API_KEY = ENV['YD_API_KEY'] || 'paste_your_api_key_here'
 
 # Below is a set of bet parameters. You can change any of them.
 bet_amount = 100   # amount of the bet, in satoshis

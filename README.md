@@ -25,7 +25,19 @@ gem update yolodice-client
 
 ## Running the scripts
 
-Scripts can be downloaded individually. You should paste an API KEY to your script as instructed.
+Scripts can be downloaded individually. You should paste an API KEY to your script as instructed or you can use an environmental variable YD_API_KEY and run the script unmodified, like this:
+
+```
+export YD_API_KEY=your_private_api_key
+ruby play/martingale.rb
+```
+
+or like this, in one line:
+
+```
+YD_API_KEY=your_private_api_key ruby play/martingale.rb
+```
+
 
 # Disclaimer
 
